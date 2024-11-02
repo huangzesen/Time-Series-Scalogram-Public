@@ -18,5 +18,5 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/pypa/sampleproject"
-Issues = "https://github.com/pypa/sampleproject/issues"
+Homepage = "https://github.com/huangzesen/Time-Series-Scalogram-Publict"
+Issues = "https://github.com/huangzesen/Time-Series-Scalogram-Public/issues"
