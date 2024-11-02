@@ -1,5 +1,3 @@
-# Example Package
+# Time-Series-Scalogram
 
-This is a simple example package. You can use
-[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
-to write your content.
+This package helps you to compile and visualize any time series with a scalogran using a user-defined pixel function.
