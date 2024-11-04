@@ -55,12 +55,7 @@ from pathlib import Path
 def load_user_defined_function(pixel_func_path=None):
     # Load the function from the specified path or fall back to the local pixel_func module
     if pixel_func_path is None:
-        try:
-            import pixel_func
-            func = pixel_func.func
-            print(f"Loaded function from: {pixel_func.__file__}")
-        except ImportError:
-            raise ValueError("Please specify the absolute path of pixel_func.py")
+        func = pixel_funcs.compressbility
     else:
         # Create a unique name for the module to avoid conflicts
         module_name = "user_pixel_func"
@@ -294,6 +289,22 @@ def SolarWindScannerInnerLoopParallel(i1):
     scan['tmid'] = tstart + win/2
 
     return scan
+
+
+class pixel_funcs:
+    def compressbility(x):
+        try:
+
+            scan = {
+                'value': np.sum(np.abs(np.log10(x)) > 0.02)/len(x),
+            }
+
+        except:
+            scan = {
+                'value': np.nan
+            }
+
+        return scan
 
 
 
