@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "Time_Series_Scalogram"
-version = "0.0.3"
+version = "0.0.4"
 authors = [
   { name="Zesen Huang", email="huangzs1997@gmail.com" },
 ]
@@ -26,5 +26,5 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/huangzesen/Time-Series-Scalogram-Publict"
+Homepage = "https://github.com/huangzesen/Time-Series-Scalogram-Public"
 Issues = "https://github.com/huangzesen/Time-Series-Scalogram-Public/issues"
